@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-static size_t	count_words(char *s, char c)
+size_t	count_words(char *s, char c)
 {
 	size_t	count;
 
@@ -29,7 +29,7 @@ static size_t	count_words(char *s, char c)
 	return (count);
 }
 
-static size_t	word_length(char *s, char c)
+size_t	word_length(char *s, char c)
 {
 	size_t	length;
 
@@ -42,7 +42,7 @@ static size_t	word_length(char *s, char c)
 	return (length);
 }
 
-static char	*new_str(char *s, size_t n)
+char	*new_str(char *s, size_t n)
 {
 	char	*str;
 
@@ -55,7 +55,7 @@ static char	*new_str(char *s, size_t n)
 	return (str);
 }
 
-static char	**finish(char **split, size_t n, char *s, size_t *i)
+char	**finish(char **split, size_t n, char *s, size_t *i)
 {
 	split[*i] = new_str(s, n);
 	if (!split[*i])

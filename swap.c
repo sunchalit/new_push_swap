@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-static void	swap(stack **s) //Define a function that swaps the positions of the top node and second node of a stack
+void	swap(stack **s) //Define a function that swaps the positions of the top node and second node of a stack
 {
 	*s = (*s)->next;
     (*s)->prev->prev = *s;

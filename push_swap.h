@@ -31,12 +31,12 @@ stack   *sort_3(stack **s);
 stack   *sort(stack **s);
 
 //main.c
-static void final(stack **a, stack **b);
+void final(stack **a, stack **b);
 
 //utils1.c
 void    init_stack(stack **s, char **argv);
 int     stack_len(stack *s);
-static void    fill(stack **s, int number);
+void    fill(stack **s, int number);
 stack   *findlast(stack *s);
 int     findmiddle(stack *s);
 
@@ -45,29 +45,29 @@ int     ft_atoi(char *str);
 void	*ft_memcpy(void *s1, void *s2, size_t n);
 
 //utils3.c
-static size_t	count_words(char *s, char c);
-static size_t	word_length(char *s, char c);
-static char	*new_str(char *s, size_t n);
-static char	**finish(char **split, size_t n, char *s, size_t *i);
+size_t	count_words(char *s, char c);
+size_t	word_length(char *s, char c);
+char	*new_str(char *s, size_t n);
+char	**finish(char **split, size_t n, char *s, size_t *i);
 char	**ft_split(char *s, char c);
 
 //swap.c
-static void   swap(stack **s);
+void   swap(stack **s);
 void    sa(stack **s);
 void    sb(stack **s);
 
 //rotate.c
-static void    rotate(stack **s);
+void    rotate(stack **s);
 void    ra(stack **s);
 void    rb(stack **s);
 
 //reverse_rotate.c
-static void     reverse_rotate(stack **s);
+void     reverse_rotate(stack **s);
 void    rra(stack **s);
 void    rrb(stack **s);
 
 //push.c
-static void     push(stack **src, stack **dest);
+void     push(stack **src, stack **dest);
 void    pa(stack **a, stack **b);
 void    pb(stack **b, stack **a);
 

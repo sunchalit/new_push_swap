@@ -27,7 +27,7 @@ int stack_len(stack *s)
     return (size);
 }
 
-static void    fill(stack **s, int number)
+void    fill(stack **s, int number)
 {
     stack *new;
 
