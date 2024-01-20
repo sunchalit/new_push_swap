@@ -12,10 +12,10 @@
 
 #include "push_swap.h"
 
-int	stack_len(stack *s)
+int	stack_len(t_stack *s)
 {
 	int		size;
-	stack	*current;
+	t_stack	*current;
 
 	size = 0;
 	current = s;
@@ -27,11 +27,11 @@ int	stack_len(stack *s)
 	return (size);
 }
 
-void	fill(stack **s, int number)
+void	fill(t_stack **s, int number)
 {
-	stack	*new;
+	t_stack	*new;
 
-	new = (stack *)malloc(sizeof(stack));
+	new = (t_stack *)malloc(sizeof(t_stack));
 	if (!new)
 		free_error(s);
 	new->value = number;
@@ -42,7 +42,7 @@ void	fill(stack **s, int number)
 	*s = new;
 }
 
-void	init_stack(stack **s, char **argv)
+void	init_stack(t_stack **s, char **argv)
 {
 	int	number;
 	int	i;
@@ -60,14 +60,14 @@ void	init_stack(stack **s, char **argv)
 	}
 }
 
-stack	*findlast(stack *s)
+t_stack	*findlast(t_stack *s)
 {
 	while (s->next)
 		s = s->next;
 	return (s);
 }
 
-int	findmiddle(stack *s)
+int	findmiddle(t_stack *s)
 {
 	int	len;
 	int	middle;

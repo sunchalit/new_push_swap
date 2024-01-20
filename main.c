@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-void	final(stack **a, stack **b)
+void	final(t_stack **a, t_stack **b)
 {
 	if (stack_len(*a) == 2)
 		sort_2(a);
@@ -34,8 +34,8 @@ void	final(stack **a, stack **b)
 
 int	main(int argc, char *argv[])
 {
-	stack	*a;
-	stack	*b;
+	t_stack	*a;
+	t_stack	*b;
 
 	a = NULL;
 	b = NULL;

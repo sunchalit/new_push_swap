@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-stack	*sort(stack **s)
+t_stack	*sort(t_stack **s)
 {
 	int	a;
 	int	b;
@@ -30,7 +30,7 @@ stack	*sort(stack **s)
 	return (*s);
 }
 
-stack	*sort_2(stack **s)
+t_stack	*sort_2(t_stack **s)
 { 
 	if ((*s)->value > (*s)->next->value)
 	{
@@ -39,7 +39,7 @@ stack	*sort_2(stack **s)
 	return (*s);
 }
 
-stack	*sort_3(stack **s)
+t_stack	*sort_3(t_stack **s)
 {
 	int	a;
 	int	b;

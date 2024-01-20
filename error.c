@@ -27,7 +27,7 @@ int	error_1(char *str)
 	return (0);
 }
 
-int	error_2(stack *s, int number)
+int	error_2(t_stack *s, int number)
 {
 	if (!s)
 		return (0);
@@ -40,9 +40,9 @@ int	error_2(stack *s, int number)
 	return (0);
 }
 
-void	free_stack(stack **s)
+void	free_stack(t_stack **s)
 {
-	stack	*temp;
+	t_stack	*temp;
 	while (*s != NULL)
 	{
 		temp = *s;
@@ -51,7 +51,7 @@ void	free_stack(stack **s)
 	}
 }
 
-void	free_error(stack **s)
+void	free_error(t_stack **s)
 {
 	free_stack(s);
 	write(1, "error\n", 6);

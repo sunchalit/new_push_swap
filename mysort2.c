@@ -12,13 +12,13 @@
 
 #include "push_swap.h"
 
-void	a_less_last_b(stack **a, stack **b)
+void	a_less_last_b(t_stack **a, t_stack **b)
 {
 	pa(a, b);
 	rb(b);   
 }
 
-void	a_less_middle(stack **a, stack **b,stack *last_b)
+void	a_less_middle(t_stack **a, t_stack **b, t_stack *last_b)
 {
 	int	counter;
 
@@ -38,7 +38,7 @@ void	a_less_middle(stack **a, stack **b,stack *last_b)
 	}
 }
 
-void	a_than_middle(stack **a, stack **b)
+void	a_than_middle(t_stack **a, t_stack **b)
 {
 	int	counter;
 
@@ -56,7 +56,7 @@ void	a_than_middle(stack **a, stack **b)
 	}
 }
 
-void	lessthan_3(stack **a, stack **b, stack *last_b)
+void	lessthan_3(t_stack **a, t_stack **b, t_stack *last_b)
 {
 	if ((*a)->value <= last_b->value)
 	{
@@ -70,11 +70,11 @@ void	lessthan_3(stack **a, stack **b, stack *last_b)
 	}
 }
 
-void	second(stack **a, stack **b)
+void	second(t_stack **a, t_stack **b)
 {
 	int		len_b;
 	int		middle;
-	stack	*last_b;
+	t_stack	*last_b;
 
 	if ((*b) == NULL || (*a)->value >= (*b)->value)
 		pa(a, b);
@@ -90,6 +90,6 @@ void	second(stack **a, stack **b)
 		else if ((*a)->value >= middle)
 			a_than_middle(a, b);
 		else if ((*a)->value < middle)
-			a_less_middle(a, b, last_b)
+			a_less_middle(a, b, last_b);
 	}
 }

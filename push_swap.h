@@ -18,27 +18,27 @@
 # include <stdlib.h>
 # include <limits.h>
 
-typedef struct stack_data
+typedef struct s_stack_data
 {
 	int					value;
-	struct stack_data	*prev;
-	struct stack_data	*next;
-}	stack;
+	struct s_stack_data	*prev;
+	struct s_stack_data	*next;
+}	t_stack;
 
 //sort_1-3.c
-stack	*sort_2(stack **s);
-stack	*sort_3(stack **s);
-stack	*sort(stack **s);
+t_stack	*sort_2(t_stack **s);
+t_stack	*sort_3(t_stack **s);
+t_stack	*sort(t_stack **s);
 
 //main.c
-void	final(stack **a, stack **b);
+void	final(t_stack **a, t_stack **b);
 
 //utils1.c
-void	init_stack(stack **s, char **argv);
-int		stack_len(stack *s);
-void	fill(stack **s, int number);
-stack	*findlast(stack *s);
-int		findmiddle(stack *s);
+void	init_stack(t_stack **s, char **argv);
+int		stack_len(t_stack *s);
+void	fill(t_stack **s, int number);
+t_stack	*findlast(t_stack *s);
+int		findmiddle(t_stack *s);
 
 //utils2.c
 int		ft_atoi(char *str);
@@ -52,41 +52,41 @@ char	**finish(char **split, size_t n, char *s, size_t *i);
 char	**ft_split(char *s, char c);
 
 //swap.c
-void	swap(stack **s);
-void	sa(stack **s);
-void	sb(stack **s);
+void	swap(t_stack **s);
+void	sa(t_stack **s);
+void	sb(t_stack **s);
 
 //rotate.c
-void	rotate(stack **s);
-void	ra(stack **s);
-void	rb(stack **s);
+void	rotate(t_stack **s);
+void	ra(t_stack **s);
+void	rb(t_stack **s);
 
 //reverse_rotate.c
-void	reverse_rotate(stack **s);
-void	rra(stack **s);
-void	rrb(stack **s);
+void	reverse_rotate(t_stack **s);
+void	rra(t_stack **s);
+void	rrb(t_stack **s);
 
 //push.c
-void	push(stack **src, stack **dest);
-void	pa(stack **a, stack **b);
-void	pb(stack **b, stack **a);
+void	push(t_stack **src, t_stack **dest);
+void	pa(t_stack **a, t_stack **b);
+void	pb(t_stack **b, t_stack **a);
 
 //mysort1.c
-int		f(stack **a, stack **b);
-void	third(stack **a, stack **b);
-stack	*first(stack **a, stack **b);
+int		f(t_stack **a, t_stack **b);
+void	third(t_stack **a, t_stack **b);
+t_stack	*first(t_stack **a, t_stack **b);
 
 //mysort2.c
-void	second(stack **a, stack **b);
-void	lessthan_3(stack **a, stack **b, stack *last_b);
-void	a_than_middle(stack **a, stack **b);
-void	a_less_middle(stack **a, stack **b, stack *last_b);
-void	a_less_last_b(stack **a, stack **b);
+void	second(t_stack **a, t_stack **b);
+void	lessthan_3(t_stack **a, t_stack **b, t_stack *last_b);
+void	a_than_middle(t_stack **a, t_stack **b);
+void	a_less_middle(t_stack **a, t_stack **b, t_stack *last_b);
+void	a_less_last_b(t_stack **a, t_stack **b);
 
 //error.c
 int		error_1(char *str);
-int		error_2(stack *s, int number);
-void	free_stack(stack **s);
-void	free_error(stack **s);
+int		error_2(t_stack *s, int number);
+void	free_stack(t_stack **s);
+void	free_error(t_stack **s);
 
 #endif 

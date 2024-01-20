@@ -12,9 +12,9 @@
 
 #include "push_swap.h"
 
-void	rotate(stack **s)
+void	rotate(t_stack **s)
 {
-	stack	*last;
+	t_stack	*last;
 
 	last = findlast(*s);
 	last->next = (*s);
@@ -24,13 +24,13 @@ void	rotate(stack **s)
 	last->next->next = NULL;
 }
 
-void	ra(stack **s)
+void	ra(t_stack **s)
 {
 	rotate(s);
 	write(1, "ra\n", 3);
 }
 
-void	rb(stack **s)
+void	rb(t_stack **s)
 {
 	rotate(s);
 	write(1, "rb\n", 3);

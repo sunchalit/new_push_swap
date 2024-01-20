@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-void	swap(stack **s)
+void	swap(t_stack **s)
 {
 	*s = (*s)->next;
 	(*s)->prev->prev = *s;
@@ -23,13 +23,13 @@ void	swap(stack **s)
 	(*s)->prev = NULL;
 }
 
-void	sa(stack **s)
+void	sa(t_stack **s)
 {
 	swap(s);
 	write(1, "sa\n", 3);
 }
 
-void	sb(stack **s)
+void	sb(t_stack **s)
 {
 	swap(s);
 	write(1, "sb\n", 3);

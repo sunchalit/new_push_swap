@@ -12,9 +12,9 @@
 
 #include "push_swap.h"
 
-int	f(stack **a, stack **b)
+int	f(t_stack **a, t_stack **b)
 {
-	stack	*last_a;
+	t_stack	*last_a;
 	int		last_3;
 
 	last_3 = 3;
@@ -32,9 +32,9 @@ int	f(stack **a, stack **b)
 	return (last_3);
 }
 
-void	third(stack **a, stack **b)
+void	third(t_stack **a, t_stack **b)
 {
-	stack	*last_a;
+	t_stack	*last_a;
 	int		last_3;
 	int		len_b;
 
@@ -61,9 +61,9 @@ void	third(stack **a, stack **b)
 	}
 }
 
-stack	*first(stack **a, stack **b)
+t_stack	*first(t_stack **a, t_stack **b)
 {
-	stack	*last;
+	t_stack	*last;
 	int		len_a;
 
 	last = findlast(*a);
