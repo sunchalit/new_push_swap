@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 14:11:00 by marvin            #+#    #+#             */
-/*   Updated: 2024/01/12 18:15:54 by cnarkcha         ###   ########.fr       */
+/*   Updated: 2024/01/23 16:28:46 by cnarkcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	a_less_last_b(t_stack **a, t_stack **b)
 {
 	pa(a, b);
-	rb(b);   
+	rb(b);
 }
 
 void	a_less_middle(t_stack **a, t_stack **b, t_stack *last_b)

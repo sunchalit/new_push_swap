@@ -6,7 +6,7 @@
 /*   By: cnarkcha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 18:36:13 by cnarkcha          #+#    #+#             */
-/*   Updated: 2024/01/12 18:36:16 by cnarkcha         ###   ########.fr       */
+/*   Updated: 2024/01/23 16:28:05 by cnarkcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ int	error_2(t_stack *s, int number)
 void	free_stack(t_stack **s)
 {
 	t_stack	*temp;
+
 	while (*s != NULL)
 	{
 		temp = *s;

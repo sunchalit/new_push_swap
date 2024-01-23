@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 14:47:43 by marvin            #+#    #+#             */
-/*   Updated: 2024/01/12 18:32:16 by cnarkcha         ###   ########.fr       */
+/*   Updated: 2024/01/23 16:29:13 by cnarkcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ t_stack	*sort(t_stack **s)
 }
 
 t_stack	*sort_2(t_stack **s)
-{ 
+{
 	if ((*s)->value > (*s)->next->value)
 	{
 		sa(s);
