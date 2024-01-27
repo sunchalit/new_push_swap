@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 14:19:26 by marvin            #+#    #+#             */
-/*   Updated: 2024/01/12 17:58:07 by cnarkcha         ###   ########.fr       */
+/*   Updated: 2024/01/27 10:57:05 by cnarkcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,6 @@ void	final(t_stack **a, t_stack **b)
 		sort_3(a);
 	else if (stack_len(*a) > 3)
 		first(a, b);
-	while (*a != NULL)
-	{
-		printf("%d\n", (*a)->value);
-		*a = (*a)->next;
-	}
-	while (*b != NULL)
-	{
-		printf("b is %d\n", (*b)->value);
-		*b = (*b)->next;
-	}
 }
 
 int	main(int argc, char *argv[])
